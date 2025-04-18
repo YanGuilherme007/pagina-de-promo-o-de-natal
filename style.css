@@ -1,116 +1,119 @@
-body {
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo */
+  body {
     font-family: sans-serif;
-}
-
-.body {
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-}
-
-.container {
-    position: relative;
-    width: 100vw;
     height: 100vh;
-    background-color: rgba(119, 117, 117, 0.356);
-    z-index: 1;
-    
-}
-
-.background {
-    position: absolute;
-    width: 50vw;
-    height: 60vh;
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* Container centralizado */
+  .container {
+    position: relative;
     background-color: white;
-    top: 25%;
-    left: 25%;
-    box-shadow: 10px black;
+    width: 80%; /* 80% da largura da tela */
+    max-width: 1200px; /* Limite máximo para telas grandes */
+    height: 70%; /* 70% da altura da tela */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Background (ajustado para ocupar 90% do container) */
+  .background {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    z-index: 1;
+  }
+  
+  /* Emoji da árvore de Natal */
+  .arvore {
+    font-size: 15vw; /* Ajustado proporcionalmente ao tamanho da tela */
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
- box-shadow: 1px 1px 17px;
- border-radius: 5%;
- 
-
-}
-.arvore{
-position: absolute;
-font-size: 50px;
-
-top: 25%;
-left: 45%;
-z-index: 3;
-
-}
-
-.primeira-frase{
-    position: absolute;
-    left:245px ;
-    top:200px ;
-    letter-spacing: 1px;
-    
-    
-
- z-index: 3;
-}
-
-.paragrafo-1{
-    position: absolute;
-    left: 190px;
-    top: 230px;
-    z-index: 3;
-}
-.paragrafo-2{
-    position: absolute;
-    left: 225px;
-    top: 250px;
-    z-index: 3;
-
-
-
-}
-
-
-.paragrafo-3{
-    position: absolute;
+  }
+  
+  /* Frase principal (Título) */
+  .primeira-frase {
+    font-size: 3.5vw; /* Proporcional ao tamanho da tela */
+    font-weight: 600;
+    margin-top: 12%;
+    color: #333;
+    z-index: 2;
+  }
+  
+  /* Parágrafos */
+  .paragrafo-1,
+  .paragrafo-2,
+  .paragrafo-3 {
+    font-size: 2vw; /* Proporcional ao tamanho da tela */
+    color: #333;
+    margin: 10px 0;
+    z-index: 2;
+  }
+  
+  /* Parágrafo com destaque (em vermelho) */
+  .paragrafo-3 {
     color: red;
-    left: 200px;
-    top: 300px;
-    z-index: 3;
-}
-.Botao{
-    position: absolute;
-    left: 250px;
-    top: 360px;
-    z-index: 4;
+  }
+  
+  /* Botão principal */
+  .Botao {
+    margin-top: 3vh; /* Distância proporcional ao tamanho da tela */
     background-color: green;
-    border: none;
-    border-radius: 5%;
-   
-    width: 160px;
-    height: 40px;
-}
-.frase-botao{
-    position: absolute;
     color: white;
-    left:266px ;
-    top: 351px;
-    z-index: 4;
-}
-.botao-x{
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 3;
+    
+  }
+  
+  .Botao:hover {
+    background-color: darkgreen;
+  }
+  
+  /* Texto do botão */
+  .frase-botao {
+    font-size: 1.5vw;
+    color: white;
+    z-index: 3;
+  }
+  
+  /* Botão de fechar (X) */
+  .botao-x {
     position: absolute;
     border: none;
     background: none;
     color: dimgray;
-    left:472px;
-    top: 145px;
+    top: 5%;
+    right: 5%;
+    font-size: 2vw;
     z-index: 4;
-}
-
-
-
-
-
+    cursor: pointer;
+  }
+  
