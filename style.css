@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(119, 117, 117, 0.356);
+    z-index: 1;
+    
+}
+
+.background {
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    top: 25%;
+    left: 25%;
+    box-shadow: 10px black;
+    z-index: 2;
+ box-shadow: 1px 1px 17px;
+ border-radius: 5%;
+ 
+
+}
+.arvore{
+position: absolute;
+font-size: 50px;
+
+top: 25%;
+left: 45%;
+z-index: 3;
+
+}
+
+.primeira-frase{
+    position: absolute;
+    left:245px ;
+    top:200px ;
+    letter-spacing: 1px;
+    
+    
+
+ z-index: 3;
+}
+
+.paragrafo-1{
+    position: absolute;
+    left: 190px;
+    top: 230px;
+    z-index: 3;
+}
+.paragrafo-2{
+    position: absolute;
+    left: 225px;
+    top: 250px;
+    z-index: 3;
+
+
+
+}
+
+
+.paragrafo-3{
+    position: absolute;
+    color: red;
+    left: 200px;
+    top: 300px;
+    z-index: 3;
+}
+.Botao{
+    position: absolute;
+    left: 250px;
+    top: 360px;
+    z-index: 4;
+    background-color: green;
+    border: none;
+    border-radius: 5%;
+   
+    width: 160px;
+    height: 40px;
+}
+.frase-botao{
+    position: absolute;
+    color: white;
+    left:266px ;
+    top: 351px;
+    z-index: 4;
+}
+.botao-x{
+    position: absolute;
+    border: none;
+    background: none;
+    color: dimgray;
+    left:472px;
+    top: 145px;
+    z-index: 4;
+}
+
+
+
+
+
